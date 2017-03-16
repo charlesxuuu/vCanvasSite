@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html data-type="example" data-id="panorama-click-free">
+    <head>
+        <title>DEMO: Virtual Tour</title>
+        <meta charset='utf-8' content='text/html' http-equiv='Content-type' />
+
+        <script src='script/jquery-1.9.1.min.js' type='text/javascript'></script>
+        <script src="script/jquery-ui.min.js" type='text/javascript'></script>
+        <script src='script/jquery.reel-min.js' type='text/javascript'></script>
+        <script src='script/my.js' type='text/javascript'></script>
+        <script src='script/map_util.js' type='text/javascript'></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4P0EKtJlLonXY9O7yjP-4NNjAfCDNcfk&callback=initMap"
+    async defer></script>
+        <link rel="stylesheet" href="style/jquery-ui.css"/>
+        <link rel="stylesheet" href="style/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
+
+    </head>
+
+    <body style="background-color:black;">
+        <div id="pano00" class="PanoContainer">
+            <!-- Here is the 360 panorama picture code starts which have it's original height and width more is in documentation -->
+            <img src="../upload/upload_panos/PANO_20140413_000003.jpg"
+              class="reel"
+              id="mainpicture"
+              data-image="../upload/upload_panos/PANO_20140413_000003.jpg"
+              data-orientable="true"
+              data-responsive="true"
+              data-frames="100"
+              data-frame="1"
+              data-stitched="4000" />
+
+            <!-- end 360 panorama picture -->
+
+            <!-- Here is the annotation pointer code starts here annotation pointer code have it's x and y position and unique id and data-for which is needed for connect main 360 picture. -->
+
+            <!-- move to different position pointer code starts here -->            
+        </div>
+        <div class="mapframe">
+            <input type="image" src="assets/leftarrow.png" id="toggle" class="toggle" onclick="changearrow()"/> 
+            <div id="map" class="map"></div>
+        </div>
+
+        <!-- end move position pointer -->
+    </body>
+</html>
+
