@@ -1,0 +1,113 @@
+body{
+  overflow: initial;
+  font-family:sans-serif;
+}
+.intro-mapframe{
+  width: 100%;
+  height: 70%;
+}
+.intro-text {
+    width:180vw;
+    height:50vh;
+    display: table-cell;
+    text-align: center;
+}
+
+.intro-text h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+.PanoContainer {
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+  z-index:0;
+}
+.reel{
+  width: 100%;
+  height: 100%;
+  cursor:   !important;
+}
+.reel-panning *{
+  cursor:   !important;
+}
+.toggle{
+  position: relative;
+  bottom: 0px;
+}
+.map{
+  height: 100%;
+  width: 100%;
+  border:3px solid black;
+}     
+.mapframe {
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+  bottom: 6%;
+  position: absolute;
+}
+.intromapframe {
+  height: 400px;
+  z-index: 1;
+  bottom: 6%;
+  right: 70%;
+}
+
+.introframe{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.wrapper {
+  height: 100%;
+  margin: 0 auto; 
+}
+
+
+.credit {
+  text-align: center;
+  color: #888;
+  padding: 10px 10px;
+  margin: 0 0 0 0;
+  background: #f5f5f5;
+  float: left;
+  width: 100%;
+}
+.credit a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+
+.page-container {
+  float: left;
+  width: 100%;
+  margin: 0 auto 300px;
+  position: relative;
+}
+.panorama {
+  width: 100%;
+  float: left;
+  margin-top: -5px;
+  height: 70%;
+  position: relative;
+}
+
+.panorama .credit {
+  background: rgba(0,0,0,0.2);
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  float: right;
+  }
